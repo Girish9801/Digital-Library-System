@@ -1,0 +1,192 @@
+* {
+    font-family: "Nova Square", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4e4e4e;
+}
+
+
+/* navbar */
+
+.navbar {
+    padding: 30px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logout {
+    margin-left: 15px;
+}
+
+.navbar-links a {
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.navbar-link,
+.dropdown-toggle,
+.dropdown-menu a,
+.logout {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover,
+.dropdown-toggle:hover{
+    color: #ac9b99;
+}
+
+.logout:hover {
+    color: #ff1d01;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    color: #ac9b99;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-links {
+        margin-top: 10px;
+    }
+    .navbar-link {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+
+/* navbar end */
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.header-line {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.panel {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.form-control {
+    color: #000000;
+}
+
+input[type="text"],
+input[type="email"] {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1e211e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #101110;
+}
+
+.footer-section {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-section a:hover {
+    color: #232320;
+}

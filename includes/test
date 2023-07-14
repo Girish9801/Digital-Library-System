@@ -1,0 +1,30 @@
+<?php if ($_SESSION['login']) {
+?>
+    <div class="right-div">
+        <a href="logout.php" class="logout">LOG ME OUT</a>
+    </div>
+<?php } ?>
+</div>
+</div>
+<!-- LOGO HEADER END-->
+<?php if ($_SESSION['login']) {
+?>
+
+    <nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="logo">DLS: digital library system</a>
+        <div class="navbar-links">
+            <a id="menu-top" href="dashboard.php" class="navbar-link">DASHBOARD</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle navbar-link" id="ddlmenuItem" data-toggle="dropdown">
+                    ACCOUNT <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="my-profile.php">My Profile</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="change-password.php">Change Password</a></li>
+                </ul>
+            </div>
+            <a class="navbar-link" href="issued-books.php">ISSUED BOOKS</a>
+        </div>
+    </div>
+</nav>
